@@ -49,12 +49,12 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="#">Chimpa`s Pizza.</a>
-        <span class="ml-1">&copy; 2021 </span>
+        <a href="#">Origen Restaurante Bar.</a>
+        <span class="ml-1">&copy; 2022 </span>
       </div>
       <div class="ml-auto">
-        <span class="mr-1">Por</span>
-        <span>vgualdronLabs.</span>
+        <span class="mr-1">Hecho por</span>
+        <span>Ing. Victor Gualdrón Ruiz.</span>
       </div>
     </TheFooter>
   </div>

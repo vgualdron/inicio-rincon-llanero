@@ -36,8 +36,8 @@
 		          	  <b-img fluid src="static/img/logo_login.jpg" alt="logo"/>
 		          	</b-col>
 		          	<b-col class=" texto-pae text-justify">
-		          		<p class="card-text">
-					      	Chimpa`s Pizza.
+						<p class="card-text">
+							Origen Restaurante Bar.
 						</p>
 		          	</b-col>
 		          </b-row>
