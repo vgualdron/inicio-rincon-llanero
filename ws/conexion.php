@@ -4,7 +4,7 @@ date_default_timezone_set('America/Bogota');
  class Conexion extends PDO { 
    private $tipo_de_base = 'mysql';
    private $host = '127.0.0.1';
-   private $nombre_de_base = 'bd_general';
+   private $nombre_de_base = 'pinchetas_general';
    private $usuario = 'root';
    private $contrasena = '';
    private  $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
