@@ -83,9 +83,10 @@ export default {
       this.$http.post('/ws/inicio/autenticacion.php', frm).then(resp => {
       // this.$http.get('/ws/inicio/login.php', frm).then(resp => {
         let respuesta = resp.data
-        window.localStorage.setItem('token', respuesta.token)
-        self.$router.push({path: 'home'})
-        self.$loader.close()
+        window.localStorage.setItem('token', respuesta.token);
+        window.localStorage.setItem('username', respuesta.username);
+        self.$router.push({path: 'home'});
+        self.$loader.close();
       }).catch(err => {
         if (err) {
           self.$loader.close()

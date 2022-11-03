@@ -18,6 +18,7 @@ $date = date("Y-m-d H:i:s");
 if (isset($frm['cuenta']) && isset($frm['clave'])) {
   //Mostrar un post
   $sql = $conexion->prepare("SELECT * FROM pinchetas_general.usuario usua 
+                            inner join pinchetas_general.personanatural pena on (pena.pege_id = usua.pege_id)
                             where usua.usua_cuenta= ? 
                             and usua.usua_clave= ?; ");
                   
@@ -35,7 +36,8 @@ if (isset($frm['cuenta']) && isset($frm['clave'])) {
   } else {
     $_SESSION["idUsuario"] = $result["usua_id"];
     $data = (object) array();
-    $data->mensaje = "Bienvenido, ".$result["usua_cuenta"];
+    $data->mensaje = "Bienvenido, ".$result["pena_primernombre"]. " ".$result["pena_primerapellido"];
+    $data->username = $result["pena_primernombre"]. " ".$result["pena_primerapellido"];
     $data->token = openCypher('encrypt', $result["pege_id"]);
     echo json_encode($data);
     exit();
