@@ -37,7 +37,7 @@
 		          	</b-col>
 		          	<b-col class=" texto-pae text-justify">
 						<p class="card-text">
-							Origen Restaurante Bar.
+							El Rincón Llanero Restaurante.
 						</p>
 		          	</b-col>
 		          </b-row>
